@@ -5,6 +5,7 @@
 /* 
 The #include directive:
 - A preprocessor directive. It tells the C preprocessor to look for a file (called a header file) and place the contents of that file here.
+- Header files contain declarations of funcions you can use.
 - The angle brackets <> tells the preprocessor to look for the header file somewhere else than the current directory.
 - If the header file is in current directory or its subdirectories, use double quote "".
 */
