@@ -1,0 +1,6 @@
+Function Naming Rules:
+- cannot start with a digit
+- cannot start with an asterisk
+- cannot start with a dot
+- cannot start or contain arithmetic signs
+- cannot contain an apostrophe
