@@ -1,20 +1,28 @@
 How is an executable made?
 Source: https://medium.com/@laura.derohan/compiling-c-files-with-gcc-step-by-step-8e78318052
 
-Source code (.c file)
-        | Pre-processor
-        v
-Preprocessed file (.i file)     $ gcc -E main.c (stop at this step, the content of .i file will be in stdout)
-        | Compiler
-        v
-Assembly code (.s file)         $ gcc -S main.c (stop at this step and keep the .s file)
-        | Assembler
-        v
-Object file (.o)    Libraries   $ gcc -c main.c (stop at this step and keep the .o file)
+Source code (.c)
+
+        || Pre-processor
+        \/
+
+Preprocessed file (.i)          $ gcc -E main.c (stop at this step, the content of .i 
+                                        file will be in stdout)
+        || Compiler
+        \/
+
+Assembly code (.s)              $ gcc -S main.c (stop at this step and keep the .s 
+                                        file)
+        || Assembler
+        \/
+
+Object file (.o)    Libraries   $ gcc -c main.c (stop at this step and keep the .o 
+                                        file)
     |______Linker_______|
-        |
-        v
-Executable file (a.out)         $ gcc main.c
-(or an executable with the      $ gcc main.c -o myScandalousCProgram
-name you chose, like
-myScandalousCProgram)
+        ||
+        \/
+
+Executable file (a.out)         $ gcc main.c (this will always name the executable 
+                                        a.out and save it in the current directory, replacing what was compiled last time or from other files)
+                                $ gcc main.c -o myScandalousCProgram (better use -o   
+                                        to give the new compiled file a name)
