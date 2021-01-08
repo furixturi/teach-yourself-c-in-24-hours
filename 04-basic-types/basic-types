@@ -1,0 +1,18 @@
+char
+- data type to represent a single a character
+- usually takes 8 bits (1 byte)
+- denoted by single quotes
+- ASCII character set: originally using the 7 lower bits of a byte, 128 (2^7) characters. Extended on IBM-compatible PC to contain 256 (2^8) characters.
+- every character is mapped to an integer between 0-255. Int of 0-255 and char are interchangeable, i.e., assigning a='A' is the same as a=65. Trying to use an int outside of the range as a char yields nothing.
+
+int
+- a whole number
+- depending on the combiler, could be 32 bits (4 bytes, -2147483648 ~ 2147483647, or -2^31 ~ 2^31-1) or 16 bits (-32767 ~ 32768, or -2^15 ~ 2^15-1)
+
+float and double
+- numbers with a decimal point, floating-point numbers. Without the suffix "f" it will be a double by default.
+- ANSI requires that the range of float be at least plus or minus 1.0*10^37, so float is normally 32 bits (4 bytes)
+- float normally has 6 digit precision after decimal point
+- double uses twice the bits as float, so its precision is at least 10 digits after the decimal point.
+- use %f to printf floating point numbers
+- scientific notation for floating point numbers (not integers): 1e2 or 1E2 is the same as 100.000000. Print a floating point number with scientific notation: %e
