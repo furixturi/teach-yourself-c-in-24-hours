@@ -16,5 +16,7 @@ int main()
     printf("Print c2 as a digit: %d.\n", c2);
     printf("Print 2580 as a character: %c.\n", 2580);
 
+    printf("The numeric value of \\n is: %d. \n", '\n');
+
     return 0;
 }
