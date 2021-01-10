@@ -1,0 +1,9 @@
+- pre-increment/-decrement y = ++x: first increment x, then assign x's value (incremented) to y
+- post-increment/-decrement y = x++: first assign x's current value to y, then increment x
+
+- cast operator ()
+int x = 1;
+int y = 2;
+(float)x //1.0
+x/y //0
+(float)x/y //0.5
