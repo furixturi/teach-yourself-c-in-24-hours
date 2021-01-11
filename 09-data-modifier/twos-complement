@@ -1,0 +1,21 @@
+Using left most digit as the sign bit, 1 means negative.
+
+one's complemennt: flip every digit
+
+two's complement: flip every digit then plus 1
+1000    -8  // min of 4 bit integers
+1001    -7
+1010    -6
+1011    -5
+1100    -4
+1101    -3
+1110    -2
+1111    -1
+0000    0
+0001    1
+0010    2
+0011    3
+0100    4
+0101    5
+0110    6
+0111    7   // max of 4 bit integers since the left most bit is the sign bit 
